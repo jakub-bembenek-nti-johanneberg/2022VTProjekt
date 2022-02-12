@@ -12,6 +12,16 @@ a {
     letter-spacing: 5px;
     font-size:25px;
 }
+#main {
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    background-image:url(../img/background.jpg);
+    background-repeat:repeat;
+    background-size: auto;
+    height: 100vh;
+    width:100vw
+}
 nav {
     display: flex;
     justify-content: center;
@@ -71,7 +81,7 @@ nav {
     display: flex;
     flex-direction: row;
     position: absolute;
-    right: 5vw;
+    right: 4.5%;
     height: 0vh;
     top: 5vh;
     background-color:rgb(27, 27, 27);
@@ -84,7 +94,11 @@ nav {
         background-image: url(none);
         height:0px;
         width:0px;
-    }
-
         
-}
+    }
+    .logo2 {
+        background-image: url(../img/logo1.svg);
+        height:400px;
+        width:400px;
+    }
+        }
