@@ -3,7 +3,6 @@
     padding:0px;
     box-sizing: border-box;
     font-family: cooper-black-std,serif;
-    font-weight: 400;
     font-style: normal;
 }
 a {
@@ -12,6 +11,14 @@ a {
     letter-spacing: 5px;
     font-size:25px;
 }
+#wrapper {
+    display: grid;
+    grid-template-areas:
+    'na'
+    'mn'
+    'ft';
+    grid-template-rows:10vh 90vh 20vh;
+}
 #main {
     display:flex;
     justify-content:center;
@@ -19,15 +26,41 @@ a {
     background-image:url(../img/background.jpg);
     background-repeat:repeat;
     background-size: auto;
-    height: 100vh;
-    width:100vw
+    width:99vw;
+    grid-area: mn;
 }
+.footer {
+    width:99vw;
+    background-color: rgb(27, 27, 27);
+    grid-area: ft;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap
+}
+.footerLinks {
+    width: 99vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+    }
+.footerLinks a {
+    font-size: 1rem;
+}
+    .vl {
+        width: 200px;
+        border-top:5px solid rgb(236, 236, 195);
+        border-radius: 50px;
+    }
 nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    height:10vh;
+    width:99vw;
     background-color: rgb(27, 27, 27);
+    grid-area: na;
 }
 .logo {
     background-image: url(../img/logo1.svg);
@@ -35,9 +68,9 @@ nav {
     width:100px;
 }
 .logo2 {
-    background-image: url(../img/logo1.svg);
+    background-image: url(../img/logo3dfixed.svg);
     height:200px;
-    width:200px;
+    width:196px;
 }
 .navLinks {
     display: flex;
@@ -73,16 +106,23 @@ nav {
     transform: translatey(100vh);
     transition:all 0.6s ease;
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 820px) {
     .burger div {
         width: 0px;
         height: 0px;
         background-color: none;
     }
+    #wrapper {
+        display: grid;
+        grid-template-areas:
+        'na'
+        'mn'
+        'ft';
+        grid-template-rows:10vh 90vh 20vh;
+    }
     .navLinks {
     display: flex;
     flex-direction: row;
-    position: absolute;
     right: 4.5%;
     height: 0vh;
     top: 5vh;
@@ -99,8 +139,32 @@ nav {
         
     }
     .logo2 {
-        background-image: url(../img/logo1.svg);
-        height:400px;
-        width:400px;
+        background-image: url(../img/logo3dfixed.svg);
+        height:500px;
+        width:493px;
+    }
+
+    .footer {
+        width:99vw;
+        background-color: rgb(27, 27, 27);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
     }
         }
+        .footerLinks {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            list-style-type: none;
+        }
+    .vl {
+        height: 50px;
+        width:0px;
+        border-left:5px solid rgb(236, 236, 195);
+        border-top:0px ;
+        border-radius: 50px;
+        color:rgb(236, 236, 195);
+    }
