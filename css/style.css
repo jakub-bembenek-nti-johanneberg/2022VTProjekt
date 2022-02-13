@@ -12,6 +12,13 @@ a {
     letter-spacing: 5px;
     font-size:25px;
 }
+#wrapper {
+    display: grid;
+    grid-template-areas:
+    'na'
+    'mn';
+    grid-template-rows:10vh 90vh;
+}
 #main {
     display:flex;
     justify-content:center;
@@ -19,15 +26,17 @@ a {
     background-image:url(../img/background.jpg);
     background-repeat:repeat;
     background-size: auto;
-    height: 100vh;
-    width:100vw
+
+    width:100vw;
+    grid-area:mn;
 }
 nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    height:10vh;
+
     background-color: rgb(27, 27, 27);
+    grid-area:na;
 }
 .logo {
     background-image: url(../img/logo1.svg);
@@ -35,7 +44,7 @@ nav {
     width:100px;
 }
 .logo2 {
-    background-image: url(../img/logo1.svg);
+    background-image: url(../img/logo3d.svg);
     height:200px;
     width:200px;
 }
