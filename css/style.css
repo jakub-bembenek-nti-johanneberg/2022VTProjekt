@@ -9,8 +9,11 @@
 a {
     color:rgb(236, 236, 195);
     text-decoration: none;
-    letter-spacing: 5px;
+    letter-spacing: 6px;
     font-size:25px;
+}
+a:hover {
+    color:rgb(148, 148, 140);
 }
 #wrapper {
     display: grid;
@@ -79,6 +82,9 @@ nav {
     list-style-type: none;
     transition:all 0.6s ease;
 }
+.navLinks li {
+    text-align: center;
+}
 .burger div{
     width: 25px;
     height: 3px;
@@ -120,6 +126,7 @@ nav {
     justify-content: space-around;
     width:100%;
     list-style-type: none;
+
     }
     .logo {
         background-image: url(none);
