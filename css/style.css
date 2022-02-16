@@ -18,7 +18,8 @@ a {
     'na'
     'mn'
     'ft';
-    grid-template-rows:10vh 90vh 15vh;
+    grid-template-rows:10vh 90vh 20vh;
+    grid-template-columns: 1fr;
 }
 #main {
     display:flex;
@@ -27,12 +28,15 @@ a {
     background-image:url(../img/background.jpg);
     background-repeat:repeat;
     background-size: auto;
-
     width:100vw;
     grid-area:mn;
 }
 .footer {
     background-color: rgb(27, 27, 27);
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     }
 .footer a {
     font-size:15px;
@@ -60,36 +64,39 @@ nav {
     background-image: url(../img/logo3d.svg);
     height:200px;
     width:200px;
+    transition:all 2s ease;
 }
 .navLinks {
     display: flex;
     flex-direction: column;
     position: absolute;
-    right: 0px;
     height: 90vh;
     top: -90vh;
     background-color:rgb(27, 27, 27);
     align-items: center;
     justify-content: space-around;
-    width:100%;
+    width:100vw;
     list-style-type: none;
     transition:all 0.6s ease;
 }
 .burger div{
-    width: 50px;
+    width: 25px;
     height: 3px;
     background-color: rgb(236, 236, 195);
-    margin: 10px;
+    margin: 5px;
     border-radius: 10%;
 }
+.burger:hover>div {
+    background-color: blueviolet;
+}
 .toggle .line1 {
-    transform: rotate(-45deg) translate(-5px, 13px);
+    transform: rotate(-45deg) translate(-5px, 6px);
 }
 .toggle .line2 {
     opacity: 0;
 }
 .toggle .line3 {
-    transform: rotate(45deg) translate(-5px, -13px);
+    transform: rotate(45deg) translate(-5px, -6px);
 }
 .navActive {
     transform: translatey(100vh);
@@ -121,8 +128,17 @@ nav {
         
     }
     .logo2 {
-        background-image: url(../img/logo1.svg);
+        background-image: url(../img/logo3d.svg);
         height:400px;
         width:400px;
     }
+    .footer {
+        flex-direction: row;
         }
+    .linef {
+    border:rgb(236, 236, 195) 1px solid;
+    width: 2px;
+    height:100px;
+    border-radius: 44444px;
+        }
+    }
