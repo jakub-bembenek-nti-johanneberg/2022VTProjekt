@@ -6,25 +6,39 @@
     font-weight: 400;
     font-style: normal;
     }
+    ul> li {
+        list-style: none;
+    }
+    #wrapper {
+        display: grid;
+        grid-template-areas:
+        'hd'
+        'l1'
+        'co';
+        justify-content: center;
+        row-gap: 15vh;
+    }
+    #hd {
+        grid-area: hd;
+    }
     nav {
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: rgb(255, 255, 255);
-        grid-area:na;
     }
     .logo {
         background-image: url(../img/logo1.svg);
-        height:100px;
         width:100px;
+        height: 100px;
         position:static;
     }
     .navLinks {
         display: flex;
         flex-direction: column;
         position: absolute;
-        height: 90vh;
-        top: -90vh;
+        height: 100vh;
+        top: -100vh;
         background-color:rgb(255, 255, 255);
         align-items: center;
         justify-content: space-around;
@@ -57,6 +71,23 @@
     .navActive {
         transform: translatey(100vh);
         transition:all 0.6s ease;
+    }
+    #container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: co;
+        border: orangered 2px dotted;
+        background-image: blue;
+    }  
+    #logocontainer {
+        grid-area: l1;
+        width: 200px;
+        height:200px;
+        border: orangered dotted 2px;
+    }  
+    #logo1 {
+        background-image: url(../img/logo1.svg);
     }
     @media screen and (min-width: 700px) {
         .burger div {
