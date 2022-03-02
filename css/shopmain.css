@@ -3,7 +3,6 @@
     padding:0px;
     box-sizing: border-box;
     font-family: cooper-black-std,serif;
-    font-weight: 400;
     font-style: normal;
     }
     ul> li {
@@ -72,22 +71,39 @@
         transform: translatey(100vh);
         transition:all 0.6s ease;
     }
+    #logocontainer {
+        display: flex;
+        grid-area: l1;
+        justify-content: center;
+    }
+    #logo1 {
+        background-image: url(../img/logo3d.svg);
+        height:100px;
+        width:100px;
+    }
     #container {
         display: flex;
         justify-content: center;
         align-items: center;
         grid-area: co;
         border: orangered 2px dotted;
-        background-image: blue;
-    }  
-    #logocontainer {
-        grid-area: l1;
-        width: 200px;
-        height:200px;
-        border: orangered dotted 2px;
-    }  
-    #logo1 {
-        background-image: url(../img/logo1.svg);
+        width:80vw;
+        flex-wrap: wrap
+    }
+    #container ul {
+        margin:50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .picture {
+        background-image:url(../img/shirt\ front.png);
+        background-size: 100%;
+        height:250px;
+        width:200px;
+    }
+    .picture:hover {
+        background-image: url(../img/shirt\ back.png);
     }
     @media screen and (min-width: 700px) {
         .burger div {
@@ -96,17 +112,17 @@
             background-color: none;
         }
         .navLinks {
-        display: flex;
-        flex-direction: row;
-        position: absolute;
-        height: 0vh;
-        left:1.5%;
-        top: 5vh;
-        background-color:rgb(27, 27, 27);
-        align-items: center;
-        justify-content: space-around;
-        width:100%;
-        list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            position: absolute;
+            height: 0vh;
+            left:1.5%;
+            top: 5vh;
+            background-color:rgb(27, 27, 27);
+            align-items: center;
+            justify-content: space-around;
+            width:100%;
+            list-style-type: none;
     
         }
         .logo {
