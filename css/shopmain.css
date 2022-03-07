@@ -8,11 +8,12 @@
     ul li {
         list-style: none;
     }
-    .a2 {
+    a {
         color:rgb(27, 27, 27);
         text-decoration: none;
+
     }
-    #wrapper2 {
+    #wrapper {
         display: grid;
         grid-template-areas:
         'hd'
@@ -102,29 +103,14 @@
         justify-content: center;
         align-items: center;
     }
-    .picture1 {
+    .picture {
         background-image:url(../img/shirt\ front.png);
         background-size: 100%;
         height:250px;
         width:200px;
     }
-    .picture1:hover {
+    .picture:hover {
         background-image: url(../img/shirt\ back.png);
-    }
-    .picture2 {
-        background-image:url(../img/hoodie\(front\).png);
-        background-size: 100%;
-        height:250px;
-        width:200px;
-    }
-    .picture2:hover {
-        background-image: url(../img/hoodie\(back\).png);
-    }
-    .picture3 {
-        background-image: url(../img/jeans.png);
-        background-size: 100%;
-        height:250px;
-        width:200px;
     }
     .footer {
 
