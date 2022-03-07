@@ -49,6 +49,7 @@
         width:100vw;
         list-style-type: none;
         transition:all 0.6s ease;
+        border: 4px dotted red;
     }
     .navLinks li {
         text-align: center;
@@ -153,7 +154,7 @@
             flex-direction: row;
             position: absolute;
             height: 0vh;
-            left:1.5%;
+            left:0%;
             top: 5vh;
             background-color:rgb(27, 27, 27);
             align-items: center;
