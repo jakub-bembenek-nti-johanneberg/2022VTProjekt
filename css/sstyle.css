@@ -34,7 +34,7 @@
         background-color: rgb(27, 27, 27);
         grid-area:na;
     }
-    .main1 {
+    #main1 {
         display:flex;
         justify-content:center;
         align-items: center;
@@ -136,11 +136,11 @@
         align-items: center;
         background-color: rgb(255, 255, 255);
     }
-    .logoindex {
+    .logo {
         background-image: url(../img/logo1.svg);
-        height:100px;
         width:100px;
-        position: static
+        height: 100px;
+        position:static;
     }
     #logocontainer {
         display: flex;
@@ -214,14 +214,12 @@
         list-style-type: none;
     
         }
-        .logoindex {
+        .logo {
             background-image: url(none);
             height:0px;
             width:0px;
             position: absolute;
         }
-        
-
         .logo2 {
             background-image: url(../img/logo3d.svg);
             height:400px;
