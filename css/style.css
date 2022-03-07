@@ -11,7 +11,7 @@ a {
     letter-spacing: 6px;
     font-size:25px;
 }
-a:hover {
+a1:hover {
     color:rgb(148, 148, 140);
 }
 #wrapper {
@@ -23,7 +23,7 @@ a:hover {
     grid-template-rows:10vh 90vh 20vh;
     grid-template-columns: 1fr;
 }
-#main {
+.main1 {
     display:flex;
     justify-content:center;
     align-items: center;
@@ -57,7 +57,7 @@ nav {
     background-color: rgb(27, 27, 27);
     grid-area:na;
 }
-.logo {
+.logoindex {
     background-image: url(../img/logo1.svg);
     height:100px;
     width:100px;
