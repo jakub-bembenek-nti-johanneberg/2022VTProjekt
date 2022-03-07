@@ -25,12 +25,13 @@
     #hd {
         grid-area: hd;
         padding:15px;
+    }
+    nav {
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: rgb(255, 255, 255);
     }
-
     .logo {
         background-image: url(../img/logo1.svg);
         width:100px;
@@ -81,7 +82,7 @@
         grid-area: l1;
         justify-content: center;
     }
-    #logo1shopmain {
+    #logo1 {
         background-image: url(../img/logo3d.svg);
         height:200px;
         width:200px;
