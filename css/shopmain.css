@@ -8,11 +8,20 @@
     ul li {
         list-style: none;
     }
+<<<<<<< HEAD
     .a2 {
         color:rgb(27, 27, 27);
         text-decoration: none;
     }
     #wrapper2 {
+=======
+    a {
+        color:rgb(27, 27, 27);
+        text-decoration: none;
+
+    }
+    #wrapper {
+>>>>>>> parent of 927d8d9 (CSS grupperad i en fill med succee, måste bara fixa färgerna)
         display: grid;
         grid-template-areas:
         'hd'
@@ -25,12 +34,20 @@
     #hd {
         grid-area: hd;
         padding:15px;
+<<<<<<< HEAD
+=======
+    }
+    nav {
+>>>>>>> parent of 927d8d9 (CSS grupperad i en fill med succee, måste bara fixa färgerna)
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: rgb(255, 255, 255);
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of 927d8d9 (CSS grupperad i en fill med succee, måste bara fixa färgerna)
     .logo {
         background-image: url(../img/logo1.svg);
         width:100px;
@@ -81,7 +98,11 @@
         grid-area: l1;
         justify-content: center;
     }
+<<<<<<< HEAD
     #logo1shopmain {
+=======
+    #logo1 {
+>>>>>>> parent of 927d8d9 (CSS grupperad i en fill med succee, måste bara fixa färgerna)
         background-image: url(../img/logo3d.svg);
         height:200px;
         width:200px;
@@ -101,12 +122,17 @@
         justify-content: center;
         align-items: center;
     }
+<<<<<<< HEAD
     .picture1 {
+=======
+    .picture {
+>>>>>>> parent of 927d8d9 (CSS grupperad i en fill med succee, måste bara fixa färgerna)
         background-image:url(../img/shirt\ front.png);
         background-size: 100%;
         height:250px;
         width:200px;
     }
+<<<<<<< HEAD
     .picture1:hover {
         background-image: url(../img/shirt\ back.png);
     }
@@ -125,6 +151,11 @@
         height:250px;
         width:200px;
     }
+=======
+    .picture:hover {
+        background-image: url(../img/shirt\ back.png);
+    }
+>>>>>>> parent of 927d8d9 (CSS grupperad i en fill med succee, måste bara fixa färgerna)
     .footer {
 
         display:flex;
