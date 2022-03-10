@@ -9,18 +9,24 @@
         list-style: none;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     .a2 {
         color:rgb(27, 27, 27);
         text-decoration: none;
     }
     #wrapper2 {
 =======
+=======
+>>>>>>> parent of 927d8d9 (CSS grupperad i en fill med succee, måste bara fixa färgerna)
     a {
         color:rgb(27, 27, 27);
         text-decoration: none;
 
     }
     #wrapper {
+<<<<<<< HEAD
+>>>>>>> parent of 927d8d9 (CSS grupperad i en fill med succee, måste bara fixa färgerna)
+=======
 >>>>>>> parent of 927d8d9 (CSS grupperad i en fill med succee, måste bara fixa färgerna)
         display: grid;
         grid-template-areas:
@@ -35,6 +41,11 @@
         grid-area: hd;
         padding:15px;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    }
+    nav {
+>>>>>>> parent of 927d8d9 (CSS grupperad i en fill med succee, måste bara fixa färgerna)
 =======
     }
     nav {
@@ -45,7 +56,10 @@
         background-color: rgb(255, 255, 255);
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of 927d8d9 (CSS grupperad i en fill med succee, måste bara fixa färgerna)
 =======
 >>>>>>> parent of 927d8d9 (CSS grupperad i en fill med succee, måste bara fixa färgerna)
     .logo {
@@ -99,7 +113,11 @@
         justify-content: center;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     #logo1shopmain {
+=======
+    #logo1 {
+>>>>>>> parent of 927d8d9 (CSS grupperad i en fill med succee, måste bara fixa färgerna)
 =======
     #logo1 {
 >>>>>>> parent of 927d8d9 (CSS grupperad i en fill med succee, måste bara fixa färgerna)
@@ -123,7 +141,11 @@
         align-items: center;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     .picture1 {
+=======
+    .picture {
+>>>>>>> parent of 927d8d9 (CSS grupperad i en fill med succee, måste bara fixa färgerna)
 =======
     .picture {
 >>>>>>> parent of 927d8d9 (CSS grupperad i en fill med succee, måste bara fixa färgerna)
@@ -132,6 +154,7 @@
         height:250px;
         width:200px;
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
     .picture1:hover {
         background-image: url(../img/shirt\ back.png);
@@ -151,6 +174,11 @@
         height:250px;
         width:200px;
     }
+=======
+    .picture:hover {
+        background-image: url(../img/shirt\ back.png);
+    }
+>>>>>>> parent of 927d8d9 (CSS grupperad i en fill med succee, måste bara fixa färgerna)
 =======
     .picture:hover {
         background-image: url(../img/shirt\ back.png);
