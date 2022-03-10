@@ -15,7 +15,7 @@
         letter-spacing: 6px;
         font-size:25px;
     }
-    a1:hover {
+    .a1:hover {
         color:rgb(148, 148, 140);
     }
     #wrapper {
@@ -49,6 +49,7 @@
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+        background-color:rgb(27, 27, 27);
         }
     .footer a {
         font-size:15px;
