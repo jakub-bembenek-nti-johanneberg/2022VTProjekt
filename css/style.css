@@ -31,7 +31,6 @@ a:hover {
     background-image:url(../img/background.jpg);
     background-repeat:repeat;
     background-size: auto;
-    width:100vw;
     height: 90vh;
     grid-area:mn;
 }
@@ -81,7 +80,7 @@ nav {
     background-color:rgb(27, 27, 27);
     align-items: center;
     justify-content: space-around;
-    width:100vw;
+    width:100%;
     list-style-type: none;
     transition:all 0.6s ease;
 }
@@ -114,17 +113,29 @@ nav {
 }
 
 /*shopmain.hmtl specific*/
+.cart {
+    position: absolute;
+    height:50px;
+    width:50px;
+    top: 10vh;
+    right:1vw;
+    background-image:url(../img/shopping_cart_black_24dp.svg);
+    background-size: 100%;
+    transition: all 0.3s ease;
+}
+.cartUnactive {
+    opacity: 0;
+}
 #logocontainer {
     display: flex;
     justify-content: center;
-    grid-area: lc;
 }
 #logo1 {
     background-image: url(../img/logo3d.svg);
     height:200px;
     width:200px;
 }
-#container {
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -133,31 +144,50 @@ nav {
     grid-area: mn;
     flex-direction: column;
     padding: 10vh;
+    min-height: 90vh;
 }
-#container ul {
+.container ul {
     margin:50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-#container ul li {
+.container ul li {
     color: rgb(27, 27, 27);
     letter-spacing: 0px;
     font-size: 15px;
+}
+.container ul li:hover {
+    color: rgb(73, 73, 73);
 }
 .clocontainer {
     display: flex;
     flex-direction: column;
 }
-.picture {
+.picture1 {
     background-image:url(../img/shirt\ front.png);
     background-size: 100%;
     height:250px;
     width:200px;
 }
-.picture:hover {
+.picture1:hover {
     background-image: url(../img/shirt\ back.png);
+}
+.picture2 {
+    background-image:url(../img/hoodie\(front\).png);
+    background-size: 100%;
+    height:250px;
+    width:200px;
+}
+.picture2:hover {
+    background-image: url(../img/hoodie\(back\).png);
+}
+.picture3 {
+    background-image:url(../img/jeans.png);
+    background-size: 100%;
+    height:250px;
+    width:200px;
 }
 @media screen and (min-width: 700px) {
     .burger div {
@@ -171,11 +201,11 @@ nav {
     flex-direction: row;
     height: 0vh;
     top: 5vh;
-    left:3.8%;
+    left:13.5%;
     background-color:rgb(27, 27, 27);
     align-items: center;
     justify-content: space-around;
-    width:100%;
+    width:80%;
     list-style-type: none;
     }
     .logo {
