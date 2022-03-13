@@ -125,7 +125,9 @@ nav {
 }
 .cartUnactive {
     opacity: 0;
+    top:-50px;
 }
+
 #logocontainer {
     display: flex;
     justify-content: center;
@@ -164,6 +166,9 @@ nav {
 .clocontainer {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 .picture1 {
     background-image:url(../img/shirt\ front.png);
@@ -188,6 +193,26 @@ nav {
     background-size: 100%;
     height:250px;
     width:200px;
+}
+/*item specific*/
+.itemcontainer {
+    display: flex;
+    flex-direction: column;
+}
+.itemphoto1 {
+    background-image: url(../img/shirt\ front.png);
+    background-size: 100%;
+    height: 50vh;
+    width: 43vh;
+}
+.iteminfo  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.button {
+    background-color: rgb(213, 214, 205);
 }
 @media screen and (min-width: 700px) {
     .burger div {
@@ -229,6 +254,10 @@ nav {
     border-radius: 44444px;
         }
     .clocontainer {
+        flex-direction: row;
+    }
+    .itemcontainer {
+        display: flex;
         flex-direction: row;
     }
     }
