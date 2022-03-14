@@ -148,19 +148,19 @@ nav {
     padding: 10vh;
     min-height: 90vh;
 }
-.container ul {
+.cloarticle {
     margin:50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.container ul li {
+.cloarticle li {
     color: rgb(27, 27, 27);
     letter-spacing: 0px;
     font-size: 15px;
 }
-.container ul li:hover {
+.cloarticle li:hover {
     color: rgb(73, 73, 73);
 }
 .clocontainer {
@@ -194,10 +194,12 @@ nav {
     height:250px;
     width:200px;
 }
-/*item specific*/
+/*item.html specific*/
 .itemcontainer {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    width: 80%;
 }
 .itemphoto1 {
     background-image: url(../img/shirt\ front.png);
@@ -208,11 +210,25 @@ nav {
 .iteminfo  {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
+.description {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+}
+.description li {
+    list-style-type: disc;
+}
 .button {
-    background-color: rgb(213, 214, 205);
+    background-color: blueviolet;
+    width:200px;
+    height:50px;
+    border-radius: 15px;
+    font-size: 20px;
+    color: rgb(236, 236, 195);
+    border: solid 4px rgb(80, 31, 126);
 }
 @media screen and (min-width: 700px) {
     .burger div {
@@ -248,10 +264,9 @@ nav {
         flex-direction: row;
         }
     .linef {
-    border:rgb(236, 236, 195) 1px solid;
-    width: 2px;
-    height:100px;
-    border-radius: 44444px;
+        border:rgb(236, 236, 195) 1px solid;
+        width: 2px;
+        height:100px;
         }
     .clocontainer {
         flex-direction: row;
