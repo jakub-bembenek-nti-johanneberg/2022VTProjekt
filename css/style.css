@@ -194,6 +194,24 @@ nav {
     height:250px;
     width:200px;
 }
+.picture4 {
+    background-image:url(../img/longsleeve\ front.png);
+    background-size: 100%;
+    height:250px;
+    width:200px;
+}
+.picture4:hover {
+    background-image: url(../img/longsleeve\ back.png);
+}
+.picture5 {
+    background-image:url(../img/shortsfront.png);
+    background-size: 100%;
+    height:250px;
+    width:200px;
+}
+.picture5:hover {
+    background-image: url(../img/shortsback.png);
+}
 /*item.html specific*/
 .itemcontainer {
     display: flex;
@@ -251,6 +269,16 @@ nav {
     background-size: 100%;
     height: 50vh;
     width: 43vh;
+}
+/*item4.html*/
+.itemphoto4 {
+    background-image: url(../img/longsleeve\ front.png);
+    background-size: 100%;
+    height: 50vh;
+    width: 43vh;
+}
+.itemphoto4:hover {
+    background-image: url(../img/longsleeve\ back.png);
 }
 /*generell media query*/
 @media screen and (min-width: 700px) {
