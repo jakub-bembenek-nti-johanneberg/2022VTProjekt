@@ -141,7 +141,6 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    grid-area: co;
     flex-wrap: wrap;
     grid-area: mn;
     flex-direction: column;
@@ -280,6 +279,55 @@ nav {
 .itemphoto4:hover {
     background-image: url(../img/longsleeve\ back.png);
 }
+/*item5.html*/
+.itemphoto5 {
+    background-image: url(../img/shortsfront.png);
+    background-size: 100%;
+    height: 50vh;
+    width: 43vh;
+}
+.itemphoto5:hover {
+    background-image: url(../img/shortsback.png);
+}
+/*lookbook.html*/
+.lookbook {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 10%;
+}
+.bookpic1 {
+    background-image: url(../img/shirt\ front.png);
+    background-size: 100%;
+    height: 50vh;
+    width: 43vh;
+}
+.bookpic2 {
+    background-image: url(../img/hoodie\(front\).png);
+    background-size: 100%;
+    height: 50vh;
+    width: 43vh;
+}
+.bookpic3 {
+    background-image: url(../img/jeans.png);
+    background-size: 100%;
+    height: 50vh;
+    width: 43vh;
+}
+.bookpic4 {
+    background-image: url(../img/longsleeve\ front.png);
+    background-size: 100%;
+    height: 50vh;
+    width: 43vh;
+}
+.bookpic5 {
+    background-image: url(../img/shortsfront.png);
+    background-size: 100%;
+    height: 50vh;
+    width: 43vh;
+}
 /*generell media query*/
 @media screen and (min-width: 700px) {
     .burger div {
@@ -324,6 +372,9 @@ nav {
     }
     .itemcontainer {
         display: flex;
+        flex-direction: row;
+    }
+    .lookbook {
         flex-direction: row;
     }
     }
