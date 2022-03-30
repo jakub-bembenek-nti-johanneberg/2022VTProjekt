@@ -346,6 +346,37 @@ nav {
     width: 40vh;
 }
 /*about/contact*/
+.containerab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: mn;
+    flex-direction: row;
+    min-height: 90vh;
+}
+#lined {
+    height: 60vh;
+    width: 2px;
+    border: rgb(27, 27, 27) solid 2px;
+    border-radius: 312342px;
+}
+.contact1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#mail {
+    background-image:url(../img/email_black_24dp.svg);
+    height:50px;
+    width:50px;
+    background-size: 100%;
+}
+#gram {
+    background-image:url(../img/icons8-instagram.svg);
+    height:50px;
+    width:50px;
+    background-size: 100%;
+}
 /*generell media query*/
 @media screen and (min-width: 700px) {
     .burger div {
