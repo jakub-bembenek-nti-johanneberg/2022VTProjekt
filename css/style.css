@@ -295,6 +295,19 @@ nav {
     background-image: url(../img/shortsback.png);
 }
 /*lookbook.html*/
+.lbtext {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height:35vh;
+}
+.mcs {
+    font-size: medium;
+}
+.collection {
+    font-size: x-large;
+}
 .lookbook {
     display: flex;
     justify-content: space-evenly;
@@ -380,5 +393,8 @@ nav {
     }
     .lookbook {
         flex-direction: row;
+    }
+    .collection {
+        font-size: xx-large;
     }
     }
