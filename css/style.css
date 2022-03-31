@@ -348,17 +348,33 @@ nav {
 /*about/contact*/
 .containerab {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     grid-area: mn;
-    flex-direction: row;
-    min-height: 90vh;
+    flex-direction: column;
+    min-height: 130vh;
+}
+#about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60vh;
+}
+#subtext {
+    width:90vw;
 }
 #lined {
-    height: 60vh;
-    width: 2px;
+    height: 2px;
+    width: 90vw;
     border: rgb(27, 27, 27) solid 2px;
     border-radius: 312342px;
+}
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 50vh;
 }
 .contact1 {
     display: flex;
@@ -373,6 +389,18 @@ nav {
 }
 #gram {
     background-image:url(../img/icons8-instagram.svg);
+    height:50px;
+    width:50px;
+    background-size: 100%;
+}
+#bird {
+    background-image:url(../img/icons8-twitter.svg);
+    height:50px;
+    width:50px;
+    background-size: 100%;
+}
+#swish {
+    background-image:url(../img/getswishse-icon.svg);
     height:50px;
     width:50px;
     background-size: 100%;
@@ -428,5 +456,22 @@ nav {
     }
     .collection {
         font-size: xx-large;
+    }
+    .containerab {
+        flex-direction: row;
+        height: 110vh;
+    }
+    #subtext {
+        width:40vw;
+    }
+    #lined {
+        height: 60vh;
+        width: 2px;
+    }
+    #about {
+        height:auto;
+    }
+    #contact {
+        height: 95vh;
     }
     }
