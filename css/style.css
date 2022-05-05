@@ -21,7 +21,7 @@ a:hover {
     'na'
     'mn'
     'ft';
-    grid-template-rows:10vh auto 20vh;
+    grid-template-rows:10vh auto 30vh;
     grid-template-columns: 1fr;
 }
 #main {
@@ -412,6 +412,9 @@ nav {
 }
 /*generell media query*/
 @media screen and (min-width: 700px) {
+    #wrapper {
+        grid-template-rows:10vh auto 20vh;
+    }
     .burger div {
         width: 0px;
         height: 0px;
