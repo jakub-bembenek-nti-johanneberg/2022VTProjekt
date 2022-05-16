@@ -418,7 +418,6 @@ nav {
     .burger div {
         width: 0px;
         height: 0px;
-        background-color: none;
         position: absolute;
     }
     .navLinks {
@@ -478,7 +477,7 @@ nav {
     }
     #about {
         height:auto;
-        height: 78vh;
+        height: 76vh;
         justify-content: space-between;
     }
     #contact {
